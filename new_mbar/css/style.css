@@ -1,0 +1,233 @@
+/*Copyright Nettium */
+
+/* Menu bar desktop */
+
+@media only screen and (min-device-width: 481px) {
+    
+    /* Menu general */
+    
+        /* Menu bar */
+        ul#menubar {
+            background-color: #333333;
+            width: 100%;
+            height: 50px;
+            top: 0px;
+            position: fixed;
+            z-index: 10;
+            list-style-type: none;
+            margin: 0px;
+            display: inline-block;
+            float: left;
+            padding-left: 0px;
+        }
+    
+    /* Menu non hide */
+    
+        /* Menu non hide general */
+        ul#menubar ul#menunonhide {
+            height: 50px;
+            background-color: #333333;
+            display: inline-block;
+            float: left;
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        
+        /* Logo */
+            /* Logo image */
+            ul#menubar ul#menunonhide li#topbutton a#logo img#menuimg {
+                height: 11.5px;
+                width: 70px;
+                border: 0;
+            }
+            
+            /* Logo button */
+            ul#menubar ul#menunonhide li#topbutton {
+                pointer-events: none;
+                line-height: 50px;
+                vertical-align: 50%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        
+        /* Hamburger hide on desktop */
+        ul#menubar ul#menunonhide li#topmenubutton a#hamburger {
+            display: none;
+        }
+    
+    /* Menu hide */
+    
+        /* Menu hide general */
+        ul#menubar ul#menuhide {
+            display: inline-block;
+            float: left;
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        
+    /* Menu buttons */
+        
+        /* Menu buttons menuitem */
+        ul#menubar ul#menuhide li.menuitem {
+            background-color: #333333;
+            float: left;
+            height: 50px;
+            -webkit-transition: background-color 0.5s ease-out;
+            -moz-transition: background-color 0.5s ease-out;
+            -o-transition: background-color 0.5s ease-out;
+            transition: background-color 0.5s ease-out;
+        }
+        
+        /* Menu buttons menuitem hover */
+        ul#menubar ul#menuhide li.menuitem:hover {
+            background-color: #474747;
+            float: left;
+            height: 50px;
+        }
+        
+        /* Menu buttons menuitem a */
+        ul#menubar ul#menuhide li.menuitem a {
+            padding-left: 15px;
+            padding-right: 15px;
+            display: inline-block;
+        }
+    
+    /* Menu text styling desktop */
+    
+        /* Menu text styling desktop paragraph */
+        ul#menubar p.menutext {
+            link-decoration: underline;
+            color: #ffffff;
+            font-family: "verdana",geneva,sans-serif;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 16px;
+        }
+        
+    /* Menu title styling desktop paragraph */
+        ul#menubar p.menutitle {
+            link-decoration: underline;
+            color: #ffffff;
+            font-family: "verdana",geneva,sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+}
+
+
+/* Menu bar mobile */
+@media only screen and (max-device-width: 480px) {
+    
+    /* Menu mobile general */
+    
+        /* Menu mobile bar */
+        ul#menubar {
+            background-color: #333333;
+            width: 100%;
+            height: 50px;
+            top: 0px;
+            position: fixed;
+            margin: 0px;
+            z-index: 10;
+            display: inline-block;
+            padding-left: 0px;
+        }
+    
+    /* Menu mobile non hide */
+    
+        /* Menu mobile logo */
+            /* Logo menu mobile image */
+            ul#menubar li ul#menunonhide li#topbutton a#logo img#menuimg {
+                height: 11.5px;
+                width: 70px;
+                outline: none;
+            }
+            
+            ul#menubar li ul#menunonhide li#topbutton {
+                list-style-type: none;
+                text-align: center;
+                width: 100%;
+                outline: none;
+            }
+            
+            ul#menubar li ul#menunonhide {
+                list-style-type: none;
+                padding-left: 0px;
+                outline: none;
+            }
+    /* Menu mobile hamburger styling */
+    ul#menubar ul#menunonhide li#topmenubutton a#hamburger {
+        list-style-type: none;
+        outline: 0;
+    }
+    
+    /* Menu mobile hide */
+    
+        /* Menu hide general */
+        ul#menubar ul#menuhide {
+            list-style-type: none;
+            padding-left: 0px;
+            width: 100%;
+        }
+        
+    /* Menu mobile buttons */
+        
+        /* Menu mobile buttons menuitem */
+        ul#menubar ul#menuhide li.menuitem {
+            background-color: #474747;
+            height: 50px;
+            width: 100%;
+            -webkit-transition: background-color 0.5s ease-out;
+            -moz-transition: background-color 0.5s ease-out;
+            -o-transition: background-color 0.5s ease-out;
+            transition: background-color 0.5s ease-out;
+        }
+        
+        /* Menu mobile buttons menuitem hover */
+        ul#menubar ul#menuhide li.menuitem:hover {
+            background-color: #383838;
+            height: 50px;
+            width: 100%;
+        }
+        
+        /* Menu mobile buttons menuitem a */
+        ul#menubar ul#menuhide li.menuitem a {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+        }
+    
+    /* Menu mobile text styling */
+        /* Menu mobile text styling paragraph */
+        ul#menubar p.menutext {
+            link-decoration: underline;
+            color: #ffffff;
+            font-family: "verdana",geneva,sans-serif;
+            text-align: left;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        
+        /* Menu mobile title styling paragraph */
+        ul#menubar p.menutitle {
+            link-decoration: underline;
+            color: #ffffff;
+            font-family: "verdana",geneva,sans-serif;
+            text-align: left;
+            font-size: 24px;
+            text-align: center;
+        }
+}
+
+
+/* Other */
+    /* Imports CSS3 */
+    @import "compass/css3";
+
+    /* Account button turned off (for future use). To turn on remove display: none */
+    ul#menubar ul#menuhide li#account {
+        display: none;
+    }
